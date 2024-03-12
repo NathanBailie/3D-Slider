@@ -97,3 +97,20 @@ body {
     font-size: var(--span-font-size);
     color: var(--span-color);
 }
+
+.prev, .next {
+    height: 100%;
+    border: none;
+    width: 30%;
+    font-size: calc(var(--index) * 0.8);
+    cursor: pointer;
+    background: none;
+    transition: 0.1s;
+}
+.prev:hover, .next:hover {
+    background: #f7f7f7;
+}
+
+.prev:active, .next:active {
+    background: #d5d5d5;
+}
