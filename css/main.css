@@ -9,10 +9,10 @@
 :root {
     --index: calc(1vw + 1vh);
     --box-width: calc(var(--index) * 11);
-    --box-height: calc(var(--index) * 12);
+    --box-height: calc(var(--index) * 12.5);
     --shadow-size: calc(var(--index) * 8);
     --image-height: calc(var(--index) * 10);
-    --info-height: calc(var(--index) * 2);
+    --info-height: calc(var(--index) * 2.5);
     --h2-font-size: calc(var(--index) * 0.8);
     --span-font-size: calc(var(--index) * 0.6);
     --info-bg: #ddd;
@@ -113,4 +113,17 @@ body {
 
 .prev:active, .next:active {
     background: #d5d5d5;
+}
+
+.light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(var(--index) * 25);
+    height: calc(var(--index) * 25);
+    border-radius: 50%;
+    background: #ffd9d9;
+    filter: blur(50px);
+    opacity: 0.5;
 }
