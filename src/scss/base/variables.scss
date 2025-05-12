@@ -1,0 +1,12 @@
+:root {
+	--index: calc(1vw + 1vh);
+	--box-width: calc(var(--index) * 11);
+	--box-height: calc(var(--index) * 12.5);
+	--shadow-size: calc(var(--index) * 8);
+	--image-height: calc(var(--index) * 10);
+	--info-height: calc(var(--index) * 2.5);
+	--h2-font-size: calc(var(--index) * 0.8);
+	--span-font-size: calc(var(--index) * 0.6);
+	--info-bg: #ddd;
+	--span-color: #f44336;
+}

@@ -1,0 +1,9 @@
+// libs
+@use "../assets/css-libs/normalize.min.css" as *;
+
+// helpers
+@use "./base/variables.scss" as *;
+@use "./base/base_styles.scss" as *;
+
+// sections
+@use "./sections/box/box.scss" as *;
