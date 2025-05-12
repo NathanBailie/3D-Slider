@@ -17,7 +17,7 @@ A 3D slider with rotating cards featuring bird images. Built with vanilla JavaSc
 
 ### 📱 Project website
 
-#### You can watch this project here - [Link](https://nathanbailie.github.io/3D-Slider/ 'Click to visit')
+#### You can watch this project here - [Click!](https://nathanbailie.github.io/3D-Slider/ 'Click to visit')
 
 ---
 
