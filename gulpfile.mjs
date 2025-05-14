@@ -50,8 +50,13 @@ function html() {
 }
 
 function compileSass() {
-	return src('./src/scss/main.scss', { allowEmpty: true })
-		.pipe(sassCompiler().on('error', sassCompiler.logError))
+	return src('./src/scss/**/*.scss', { allowEmpty: true })
+		.pipe(
+			sassCompiler({ outputStyle: 'expanded' }).on(
+				'error',
+				sassCompiler.logError
+			)
+		)
 		.pipe(
 			gulpif(
 				process.env.NODE_ENV === 'production',
@@ -67,7 +72,7 @@ function compileSass() {
 
 function scripts() {
 	if (process.env.NODE_ENV === 'production') {
-		return src('./src/js/**/*.js').pipe(dest('./build/js'));
+		return Promise.resolve();
 	}
 	return src('./src/js/**/*.js').pipe(browserSync.stream());
 }
